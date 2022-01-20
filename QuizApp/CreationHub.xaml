@@ -1,0 +1,17 @@
+﻿<Window x:Class="QuizApp.CreationHub"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuizApp"
+        mc:Ignorable="d"
+        Title="CreationHub" Height="450" Width="800">
+    <Grid Background="DodgerBlue">
+        <ListView Width="500" Height="340" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20" Background="DeepSkyBlue">
+            
+        </ListView>
+        <Button Width="175" Height="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30, 20" Background="Orange" FontSize="50">Add</Button>
+        <Button Width="175" Height="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30, 140" Background="Gold" FontSize="50" IsEnabled="False">Edit</Button>
+        <Button Width="175" Height="100" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="30, 60" Background="Red" FontSize="50" IsEnabled="False">Delete</Button>
+    </Grid>
+</Window>

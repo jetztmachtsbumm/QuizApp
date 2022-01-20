@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace QuizApp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CreationHub.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CreationHub : Window
     {
-        public MainWindow()
+        public CreationHub()
         {
             InitializeComponent();
-        }
-
-        private void CreateBtn_Click(object sender, RoutedEventArgs e)
-        {
-            new CreationHub().Show();
-            Close();
         }
     }
 }

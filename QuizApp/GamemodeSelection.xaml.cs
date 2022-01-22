@@ -10,35 +10,29 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace QuizApp
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for GamemodeSelection.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class GamemodeSelection : Window
     {
-        public MainWindow()
+        public GamemodeSelection()
         {
             InitializeComponent();
         }
 
-        private void CreateBtn_Click(object sender, RoutedEventArgs e)
+        private void SingleplayerBtn_Click(object sender, RoutedEventArgs e)
         {
-            new CreationHub().Show();
+            new SinglePlayerGameWindow().Show();
             Close();
         }
 
-        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        private void BackBtn_Click(object sender, RoutedEventArgs e)
         {
-            Close();
-        }
-
-        private void PlayBtn_Click(object sender, RoutedEventArgs e)
-        {
-            new GamemodeSelection().Show();
+            new MainWindow().Show();
             Close();
         }
     }

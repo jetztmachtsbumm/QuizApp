@@ -13,5 +13,6 @@
         <Button Click="AddButtonClick" Width="175" Height="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30, 20" Background="Orange" FontSize="50">Add</Button>
         <Button x:Name="EditBtn" Click="EditBtn_Click" Width="175" Height="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30, 140" Background="Gold" FontSize="50">Edit</Button>
         <Button x:Name="DeleteBtn" Click="DeleteBtn_Click" Width="175" Height="100" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="30, 60" Background="Red" FontSize="50">Delete</Button>
+        <Button x:Name="BackBtn" Click="BackBtn_Click" Width="60" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="20, 5" FontSize="20" Background="Orange">Back</Button>
     </Grid>
 </Window>

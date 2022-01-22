@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         Title="CreationHub" Height="450" Width="800">
     <Grid Background="DodgerBlue">
-        <ListView Width="500" Height="340" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20" Background="DeepSkyBlue">
+        <ListView x:Name="QuestionView" Width="500" Height="340" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20" Background="DeepSkyBlue" FontSize="20">
             
         </ListView>
-        <Button Width="175" Height="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30, 20" Background="Orange" FontSize="50">Add</Button>
-        <Button Width="175" Height="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30, 140" Background="Gold" FontSize="50" IsEnabled="False">Edit</Button>
-        <Button Width="175" Height="100" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="30, 60" Background="Red" FontSize="50" IsEnabled="False">Delete</Button>
+        <Button Click="AddButtonClick" Width="175" Height="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30, 20" Background="Orange" FontSize="50">Add</Button>
+        <Button x:Name="EditBtn" Click="EditBtn_Click" Width="175" Height="100" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="30, 140" Background="Gold" FontSize="50">Edit</Button>
+        <Button x:Name="DeleteBtn" Click="DeleteBtn_Click" Width="175" Height="100" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="30, 60" Background="Red" FontSize="50">Delete</Button>
     </Grid>
 </Window>

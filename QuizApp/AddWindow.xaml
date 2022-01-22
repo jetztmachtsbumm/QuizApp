@@ -6,7 +6,17 @@
         xmlns:local="clr-namespace:QuizApp"
         mc:Ignorable="d"
         Title="AddWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid Background="DodgerBlue">
+        <Label Foreground="DarkOrange" FontSize="20" HorizontalAlignment="Left" Margin="191, 20">Quesion:</Label>
+        <TextBox KeyDown="TextBox_KeyDown" x:Name="Question_TextBox" Width="400" Height="50" VerticalAlignment="Top" Margin="50" FontSize="20" TextWrapping="Wrap" Background="LightGray"></TextBox>
+        <Label FontSize="20" Foreground="Red" VerticalAlignment="Top" Margin="140, 150">A:</Label>
+        <TextBox KeyDown="TextBox_KeyDown" x:Name="A_TextBox" Width="200" Height="50" HorizontalAlignment="Left" Margin="143" Background="LightGray" FontSize="20"></TextBox>
+        <Label FontSize="20" Foreground="LimeGreen" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="318, 150">B:</Label>
+        <TextBox KeyDown="TextBox_KeyDown" x:Name="B_TextBox" Width="200" Height="50" HorizontalAlignment="Right" Margin="143" Background="LightGray" FontSize="20"></TextBox>
+        <Label FontSize="20" Foreground="MediumVioletRed" VerticalAlignment="Bottom" Margin="140, 125">C:</Label>
+        <TextBox KeyDown="TextBox_KeyDown" x:Name="C_TextBox" Width="200" Height="50" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="143, 80" Background="LightGray" FontSize="20"></TextBox>
+        <Label FontSize="20" Foreground="Yellow" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="318, 125">D:</Label>
+        <TextBox KeyDown="TextBox_KeyDown" x:Name="D_TextBox" Width="200" Height="50" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="143, 80" Background="LightGray" FontSize="20"></TextBox>
+        <Button Click="Button_Click" Width="100" Height="50" VerticalAlignment="Bottom" Margin="10" FontSize="30" Background="LightGray">OK</Button>
     </Grid>
 </Window>

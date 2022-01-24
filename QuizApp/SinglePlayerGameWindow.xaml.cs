@@ -21,22 +21,61 @@ namespace QuizApp
     {
 
         List<Question> questions;
+        List<Button> buttons;
+        Question currentQuestion;
 
         public SinglePlayerGameWindow()
         {
             InitializeComponent();
+
             questions = Question.GetAllQuestions();
+
+            //Shuffle() is an extension method defined in ListUtils.cs
+            questions.Shuffle();
+
+            buttons = new List<Button>();
+
+            //AddMultiple() is an extension method defined in ListUtils.cs
+            buttons.AddMultiple(Btn1, Btn2, Btn3, Btn4);
+
             SetupNewQuestion();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if(((sender as Button).Content as TextBlock).Text.Equals(currentQuestion.GetAnswers()[0]))
+            {
+                (sender as Button).Background = Brushes.Lime;
+            }
+            else
+            {
+                for (int i = 0; i < currentQuestion.GetAnswers().Length; i++)
+                {
+                    if((buttons.ElementAt(i).Content as TextBlock).Text.Equals(currentQuestion.GetAnswers()[0]))
+                    {
+                        buttons.ElementAt(i).Background = Brushes.Lime;
+                    }
+                    else
+                    {
+                        buttons.ElementAt(i).Background = Brushes.Red;
+                    }
+                }
+            }
         }
 
         private void SetupNewQuestion()
         {
-            Question currentQuestion = questions.ElementAt(0);
+            currentQuestion = questions.ElementAt(0);
+
             QuestionTextBlock.Text = currentQuestion.GetTitle();
+
+            buttons.Shuffle();
+
+            for(int i = 0; i < currentQuestion.GetAnswers().Length; i++)
+            {
+                (buttons.ElementAt(i).Content as TextBlock).Text = currentQuestion.GetAnswers()[i];
+            }
+
             questions.Remove(questions.ElementAt(0));
         }
     }

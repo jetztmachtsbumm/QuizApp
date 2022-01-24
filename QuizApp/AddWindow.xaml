@@ -10,7 +10,7 @@
         <Label Foreground="DarkOrange" FontSize="20" HorizontalAlignment="Left" Margin="191, 20">Quesion:</Label>
         <TextBox KeyDown="TextBox_KeyDown" x:Name="Question_TextBox" Width="400" Height="50" VerticalAlignment="Top" Margin="50" FontSize="20" TextWrapping="Wrap" Background="LightGray"></TextBox>
         <Label FontSize="20" Foreground="Red" VerticalAlignment="Top" Margin="140, 150">A:</Label>
-        <TextBox KeyDown="TextBox_KeyDown" x:Name="A_TextBox" Width="200" Height="50" HorizontalAlignment="Left" Margin="143" Background="LightGray" FontSize="20"></TextBox>
+        <TextBox KeyDown="TextBox_KeyDown" x:Name="A_TextBox" Width="200" Height="50" HorizontalAlignment="Left" Margin="143" Background="lime" FontSize="20"></TextBox>
         <Label FontSize="20" Foreground="LimeGreen" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="318, 150">B:</Label>
         <TextBox KeyDown="TextBox_KeyDown" x:Name="B_TextBox" Width="200" Height="50" HorizontalAlignment="Right" Margin="143" Background="LightGray" FontSize="20"></TextBox>
         <Label FontSize="20" Foreground="MediumVioletRed" VerticalAlignment="Bottom" Margin="140, 125">C:</Label>

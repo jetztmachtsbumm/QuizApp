@@ -90,6 +90,7 @@
     <Compile Include="SinglePlayerGameWindow.xaml.cs">
       <DependentUpon>SinglePlayerGameWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListUtils.cs" />
     <Page Include="AddWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

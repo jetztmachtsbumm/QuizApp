@@ -8,16 +8,16 @@
         Title="SinglePlayerGameWindow" Height="450" Width="800">
     <Grid Background="DodgerBlue">
         <TextBlock x:Name="QuestionTextBlock" Width="600" Height="150" VerticalAlignment="Top" Margin="20" Background="Gray" Foreground="Orange" FontSize="30" TextWrapping="Wrap"></TextBlock>
-        <Button Click="Button_Click" Width="150" Height="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="220, 130">
+        <Button x:Name="Btn1" Click="Button_Click" Width="150" Height="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="220, 130">
             <TextBlock TextWrapping="Wrap" FontSize="20"></TextBlock>
         </Button>
-        <Button Click="Button_Click" Width="150" Height="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="220, 130">
+        <Button x:Name="Btn2" Click="Button_Click" Width="150" Height="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="220, 130">
             <TextBlock TextWrapping="Wrap" FontSize="20"></TextBlock>
         </Button>
-        <Button Click="Button_Click" Width="150" Height="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="220, 20">
+        <Button x:Name="Btn3" Click="Button_Click" Width="150" Height="100" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="220, 20">
             <TextBlock TextWrapping="Wrap" FontSize="20"></TextBlock>
         </Button>
-        <Button Click="Button_Click" Width="150" Height="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="220, 20">
+        <Button x:Name="Btn4" Click="Button_Click" Width="150" Height="100" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="220, 20">
             <TextBlock TextWrapping="Wrap" FontSize="20"></TextBlock>
         </Button>
         <Button Width="100" Height="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="20" Background="Lime" FontSize="20">Continue</Button>

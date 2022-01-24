@@ -19,9 +19,25 @@ namespace QuizApp
     /// </summary>
     public partial class SinglePlayerGameWindow : Window
     {
+
+        List<Question> questions;
+
         public SinglePlayerGameWindow()
         {
             InitializeComponent();
+            questions = Question.GetAllQuestions();
+            SetupNewQuestion();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void SetupNewQuestion()
+        {
+            Question currentQuestion = questions.ElementAt(0);
+            QuestionTextBlock.Text = currentQuestion.GetTitle();
+            questions.Remove(questions.ElementAt(0));
         }
     }
 }

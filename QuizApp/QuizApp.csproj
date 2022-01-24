@@ -87,6 +87,9 @@
       <DependentUpon>GamemodeSelection.xaml</DependentUpon>
     </Compile>
     <Compile Include="Question.cs" />
+    <Compile Include="SinglePlayerGameWindow.xaml.cs">
+      <DependentUpon>SinglePlayerGameWindow.xaml</DependentUpon>
+    </Compile>
     <Page Include="AddWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -117,6 +120,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SinglePlayerGameWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

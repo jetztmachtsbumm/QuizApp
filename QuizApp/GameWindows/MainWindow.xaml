@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="DodgerBlue">
-        <Image Source="resources\Logo.jpg" Width="300" HorizontalAlignment="Left" Margin="100"></Image>
+        <Image Source="/resources/Logo.jpg" Width="300" HorizontalAlignment="Left" Margin="100"></Image>
         <Button x:Name="PlayBtn" Click="PlayBtn_Click" Height="100" Width="200" FontSize="50" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="40, 40" Background="LimeGreen" >Play</Button>
         <Button Click="CreateBtn_Click" Height="100" Width="200" FontSize="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="40, 160" Background="Orange">Create</Button>
         <Button x:Name="ExitBtn" Click="ExitBtn_Click" Height="100" Width="200" FontSize="50" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="40, 40" Background="Red">Exit</Button>

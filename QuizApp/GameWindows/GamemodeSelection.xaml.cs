@@ -35,5 +35,10 @@ namespace QuizApp
             new MainWindow().Show();
             Close();
         }
+
+        private void MultiplayerBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

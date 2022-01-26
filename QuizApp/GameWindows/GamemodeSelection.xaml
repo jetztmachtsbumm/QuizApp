@@ -8,7 +8,7 @@
         Title="GamemodeSelection" Height="450" Width="800">
     <Grid Background="DodgerBlue">
         <Button x:Name="SingleplayerBtn" Click="SingleplayerBtn_Click" Width="200" Height="100" Background="Lime" FontSize="35" VerticalAlignment="Top" Margin="30">Singleplayer</Button>
-        <Button Width="200" Height="100" Background="Orange" FontSize="35" VerticalAlignment="Center" Margin="50">Multiplayer</Button>
+        <Button x:Name="MultiplayerBtn" Click="MultiplayerBtn_Click" Width="200" Height="100" Background="Orange" FontSize="35" VerticalAlignment="Center" Margin="50">Multiplayer</Button>
         <Button x:Name="BackBtn" Click="BackBtn_Click" Width="200" Height="100" Background="Red" FontSize="40" VerticalAlignment="Bottom" Margin="30">Back</Button>
     </Grid>
 </Window>

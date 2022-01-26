@@ -83,45 +83,45 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="GamemodeSelection.xaml.cs">
+    <Compile Include="GameWindows\GamemodeSelection.xaml.cs">
       <DependentUpon>GamemodeSelection.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Question.cs" />
-    <Compile Include="SinglePlayerGameWindow.xaml.cs">
+    <Compile Include="Utils\Question.cs" />
+    <Compile Include="GameWindows\SinglePlayerGameWindow.xaml.cs">
       <DependentUpon>SinglePlayerGameWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ListUtils.cs" />
-    <Page Include="AddWindow.xaml">
+    <Compile Include="Utils\ListUtils.cs" />
+    <Page Include="GameWindows\AddWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CreationHub.xaml">
+    <Page Include="GameWindows\CreationHub.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GamemodeSelection.xaml">
+    <Page Include="GameWindows\GamemodeSelection.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="GameWindows\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="AddWindow.xaml.cs">
+    <Compile Include="GameWindows\AddWindow.xaml.cs">
       <DependentUpon>AddWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CreationHub.xaml.cs">
+    <Compile Include="GameWindows\CreationHub.xaml.cs">
       <DependentUpon>CreationHub.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
+    <Compile Include="GameWindows\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="SinglePlayerGameWindow.xaml">
+    <Page Include="GameWindows\SinglePlayerGameWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
